@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUpdate">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_save"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civPhoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="1dp"
+        />
+
+    <EditText
+        android:id="@+id/etBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:hint="Marca"
+        android:inputType="textCapWords"
+        android:layout_below="@id/civPhotos"
+        />
+
+    <EditText
+        android:id="@+id/etModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:hint="Modelo"
+        android:inputType="textCapWords"
+        android:layout_below="@id/etBrand"
+        />
+
+    <EditText
+        android:id="@+id/etSerialNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:hint="Número de serie"
+        android:inputType="textCapWords"
+        android:layout_below="@id/etModel"
+        />
+
+    <EditText
+        android:id="@+id/etImei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:hint="IMEI"
+        android:inputType="textCapWords"
+        android:layout_below="@id/etSerialNumber"
+        />
+
+    <EditText
+        android:id="@+id/etCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:hint="Compañía telefónica"
+        android:inputType="textCapWords"
+        android:layout_below="@id/etImei"
+        />
+
+    <EditText
+        android:id="@+id/etProperties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:hint="Características"
+        android:inputType="textCapWords"
+        android:layout_below="@id/etCompany"
+        android:lines="3"
+        />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/etProperties"
+        />
+
+
+
+</RelativeLayout>
