@@ -4,18 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8A5C91"
     tools:context=".AddUpdate">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_save"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_margin="30dp"
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#131213"
+        android:src="@drawable/ic_save"
+        android:tint="#EFE8E8"
+        app:rippleColor="#191818" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/civPhoto"
@@ -32,9 +37,12 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
+        android:backgroundTint="#9C27B0"
         android:hint="Marca"
         android:inputType="textCapWords"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:textColorHighlight="#EAE3E2"
+        android:textColorLink="#9C27B0" />
 
     <EditText
         android:id="@+id/etModel"
@@ -56,7 +64,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="20dp"
-        android:hint="Número de serie"
+        android:hint="Memoria RAM"
         android:inputType="textCapWords"
         android:padding="15dp" />
 
@@ -76,42 +84,38 @@
         android:id="@+id/etCompany"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="15dp"
-        android:padding="15dp"
-        android:hint="Compañía telefónica"
-        android:inputType="textCapWords"
         android:layout_below="@id/etImei"
-        />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Compañía de Laptop"
+        android:inputType="textCapWords"
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/etProperties"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/etCompany"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="15dp"
-        android:padding="15dp"
+        android:layout_marginEnd="20dp"
         android:hint="Características"
         android:inputType="textCapWords"
-        android:layout_below="@id/etCompany"
         android:lines="3"
-        />
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/etPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="15dp"
-        android:padding="15dp"
-        android:hint="IMEI"
-        android:inputType="numberDecimal"
         android:layout_below="@id/etProperties"
-        />
-
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Descripción"
+        android:inputType="numberDecimal"
+        android:padding="15dp" />
 
 
 </RelativeLayout>
